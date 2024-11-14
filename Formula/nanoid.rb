@@ -29,18 +29,6 @@ class NanoidCli < Formula
     end
   end
 
-  on_windows do
-    on_arm do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_windows_arm64.zip"
-      sha256 "cb16ea09bcb13be547d4f5cde81732baa163f7dc08c0f08f96582ec61b4a2716"
-    end
-
-    on_intel do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_windows_amd64.zip"
-      sha256 "9e0c2a0842bdd4441bd46487481d7c0e52d6ad75e14c9da907f4b124163dc693"
-    end
-  end
-
   def install
     bin.install "nanoid"
   end

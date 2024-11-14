@@ -1,4 +1,4 @@
-class NanoidCli < Formula
+class Nanoid < Formula
   desc "Nano ID Command Line Interface"
   homepage "https://github.com/sixafter/nanoid-cli"
   license "Apache-2.0"

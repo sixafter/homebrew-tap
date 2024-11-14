@@ -8,7 +8,7 @@ class NanoidCli < Formula
     # Replace with the actual SHA256 checksum of the tar.gz
     sha256 "PUT_SOURCE_TAR_GZ_SHA256_CHECKSUM_HERE"
     
-    license "MIT"
+    license "Apache-2.0"
   
     # Define bottle blocks for each supported platform
     bottle do

@@ -1,36 +1,52 @@
 class NanoidCli < Formula
-    desc "Generate unique, URL-friendly, secure IDs using nanoid"
-    homepage "https://github.com/sixafter/nanoid-cli"
-  
-    # Replace 'v1.0.0' with the latest version tag
-    url "https://github.com/sixafter/nanoid-cli/releases/download/v1.0.0/nanoid-v1.0.0.tar.gz"
-    
-    # Replace with the actual SHA256 checksum of the tar.gz
-    sha256 "PUT_SOURCE_TAR_GZ_SHA256_CHECKSUM_HERE"
-    
-    license "Apache-2.0"
-  
-    # Define bottle blocks for each supported platform
-    bottle do
-      sha256 cellar: :any_skip_relocation, arm64_monterey: "SHA256_FOR_ARM64_MONTEREY"
-      sha256 cellar: :any_skip_relocation, monterey:       "SHA256_FOR_INTEL_MONTEREY"
-      sha256 cellar: :any_skip_relocation, arm64_big_sur:  "SHA256_FOR_ARM64_BIG_SUR"
-      sha256 cellar: :any_skip_relocation, big_sur:        "SHA256_FOR_INTEL_BIG_SUR"
-      sha256 cellar: :any_skip_relocation, catalina:       "SHA256_FOR_CATALINA"
-      sha256 cellar: :any_skip_relocation, x86_64_linux:   "SHA256_FOR_LINUX"
+  desc "Nano ID Command Line Interface"
+  homepage "https://github.com/sixafter/nanoid-cli"
+  license "Apache-2.0"
+
+  version "1.0.0"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_darwin_arm64.tar.gz"
+      sha256 "4e9f63ad3a67904f3c8b20503a3e075b8893060d08032ef75303f8db57bfa4a6"
     end
-  
-    def install
-      # Extract the appropriate binary based on the OS and architecture
-      bin_name = "nanoid"
-  
-      # Assuming the tar.gz contains the binary at the root
-      bin.install bin_name
-    end
-  
-    test do
-      # Basic test to ensure nanoid is installed correctly
-      assert_match "Usage", shell_output("#{bin}/nanoid --help")
+
+    on_intel do
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_darwin_amd64.tar.gz"
+      sha256 "82e89e5c482e013ece7b838dfe12b44cabec347ecd84c89c43ef3b4265d47b3a"
     end
   end
-  
+
+  on_linux do
+    on_arm do
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_linux_arm64.tar.gz"
+      sha256 "PLACEHOLDER_SHA256_LINUX_ARM648074c568972d7db02347a89698aab147e784527bb06f0a8e3c698625500bcde4_TAR"
+    end
+
+    on_intel do
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_linux_amd64.tar.gz"
+      sha256 "b24eca88e1c08adac76770d082ac6ddc32dddacb0a060fa6fb6b5c1798896506"
+    end
+  end
+
+  on_windows do
+    on_arm do
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_windows_arm64.zip"
+      sha256 "cb16ea09bcb13be547d4f5cde81732baa163f7dc08c0f08f96582ec61b4a2716"
+    end
+
+    on_intel do
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_windows_amd64.zip"
+      sha256 "9e0c2a0842bdd4441bd46487481d7c0e52d6ad75e14c9da907f4b124163dc693"
+    end
+  end
+
+  def install
+    bin.install "nanoid"
+  end
+
+  test do
+    # Basic version check
+    assert_match "version", shell_output("#{bin}/nanoid --version")
+  end
+end

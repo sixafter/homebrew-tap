@@ -8,8 +8,8 @@ This tap provides both **Homebrew Formulae** and **Casks** for installing the `n
 
 ## 🧪 Formulas (Deprecated)
 
-> ⚠️ **The formula is currently maintained for backward compatibility but will be deprecated in favor of platform-specific casks.**  
-> Users are encouraged to use the appropriate cask based on their OS and CPU architecture.
+> ⚠️ **The formula is currently maintained for backward compatibility but will be deprecated in favor of platform-specific casks.** See [brews](https://goreleaser.com/deprecations#brews) for more details.
+> Users are encouraged to use the appropriate cask based on their operating system and CPU architecture.
 
 Available formula:
 

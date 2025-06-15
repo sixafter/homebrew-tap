@@ -2,7 +2,7 @@
 cask "nanoid" do
   desc "A simple, fast, and concurrent command-line tool for generating secure, URL-friendly unique string IDs using the NanoID Go implementation."
   homepage "https://github.com/sixafter/homebrew-nanoid-cli/"
-  version "1.18.0"
+  version "1.18.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "nanoid" do
 
   on_macos do
     on_intel do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.0/nanoid_1.18.0_darwin_amd64.tar.gz"
-      sha256 "c445fdc978277cd334ce6a01904e9a2ac765d69518f7ca1cda4b5868846c9910"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_darwin_amd64.tar.gz"
+      sha256 "8df0edcec11b9d686727703f6eb2ef2c530cb3681ff84a2050801a9c224b2b85"
     end
     on_arm do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.0/nanoid_1.18.0_darwin_arm64.tar.gz"
-      sha256 "1a0a7719a460a38d56e6a2cba2ae43c7d7a85046917d256505cfc4ce78b25a57"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_darwin_arm64.tar.gz"
+      sha256 "542dae934c991b7c62f1e85b3b071ac840a13a1f3a9d4707b8e2d704aa84b41c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.0/nanoid_1.18.0_linux_amd64.tar.gz"
-      sha256 "70d35533846f1c5510988d5e8ae44e37ff0c5ce25bf21c14ac26483c62ddd909"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_linux_amd64.tar.gz"
+      sha256 "c5eee860616aa9813adc1fd9a2207b16bb4119ad8d7c26cd50ca55b08ab08f86"
     end
     on_arm do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.0/nanoid_1.18.0_linux_arm64.tar.gz"
-      sha256 "3bd095d0d736a1d5f6f2caea57f15ea3893618108ded11d3f976d801868a67b7"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_linux_arm64.tar.gz"
+      sha256 "0d32db633f48e869fec2b074912785ff841c6b70d80fbff4488a732e90bef7e6"
     end
   end
 

@@ -2,18 +2,39 @@
 
 ## Overview
 
-This tap provides both **Homebrew Formulae** and **Casks** for installing the `nanoid` CLI across various platforms and architectures.
+This tap provides both **Homebrew Formulae** and **Casks** for installing the `nanoid` CLI across multiple platforms and architectures.
 
 ---
 
-## 🧪 Formulas (Deprecated)
+## 🍺 Cask (Preferred)
 
-> ⚠️ **The formula is currently maintained for backward compatibility but will be deprecated in favor of platform-specific casks.** See [brews](https://goreleaser.com/deprecations#brews) for more details.
-> Users are encouraged to use the appropriate cask based on their operating system and CPU architecture.
+> ✅ A single `nanoid` cask dynamically installs the correct binary for your system (macOS or Linux, Intel or ARM64).
+
+Install via cask:
+
+```bash
+brew tap sixafter/tap
+brew install --cask nanoid
+```
+
+Supported platforms:
+
+| Platform | Architecture | Supported |
+|----------|--------------|-----------|
+| macOS    | arm64        | ✅        |
+| macOS    | amd64 (Intel)| ✅        |
+| Linux    | arm64        | ✅        |
+| Linux    | amd64        | ✅        |
+
+---
+
+## 🧪 Formula (Deprecated)
+
+> ⚠️ The formula is maintained only for compatibility with older workflows. Prefer the `nanoid` cask.
 
 Available formula:
 
-- [**`Nano ID CLI`**](Formula/nanoid.rb) — A simple, fast, and concurrent command-line tool for generating secure, URL-friendly unique string IDs using the [NanoID](https://github.com/sixafter/nanoid-cli) Go implementation.
+- [**`nanoid` Formula**](Formula/nanoid.rb)
 
 Install via formula:
 
@@ -24,35 +45,6 @@ brew install nanoid
 
 ---
 
-## 🍺 Casks (Preferred)
-
-Platform-specific casks are now the preferred installation method:
-
-| Cask Name                | Platform         | Architecture |
-|--------------------------|------------------|--------------|
-| `nanoid-darwin-arm64`    | macOS            | arm64        |
-| `nanoid-darwin-amd64`    | macOS            | amd64 (Intel)|
-| `nanoid-linux-arm64`     | Linux            | arm64        |
-| `nanoid-linux-amd64`     | Linux            | amd64        |
-
-Install via cask (example for macOS ARM64):
-
-```bash
-brew tap sixafter/tap
-brew install --cask nanoid-darwin-arm64
-```
-
----
-
-## 🔧 Notes
-
-- If you're using an Apple M-series Mac, prefer `nanoid-darwin-arm64`.
-- For Intel-based Macs, use `nanoid-darwin-amd64`.
-- On Linux systems, choose the appropriate `nanoid-linux-*` variant.
-- The CLI binary is architecture-optimized and signed.
-
----
-
 ## 📦 Releases
 
-All binaries are built and published via [GoReleaser](https://goreleaser.com).
+All binaries are built and published using [GoReleaser](https://goreleaser.com), and signed with [Cosign](https://github.com/sigstore/cosign).

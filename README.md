@@ -26,6 +26,12 @@ Supported platforms:
 | Linux    | arm64        | ✅        |
 | Linux    | amd64        | ✅        |
 
+> 🔐 **Note for macOS users**: If you see a `killed` error when running `nanoid`, macOS may have quarantined the binary due to it being unsigned or unnotarized. To resolve:
+>
+> ```bash
+> sudo xattr -d com.apple.quarantine /opt/homebrew/bin/nanoid
+> ```
+
 ---
 
 ## 🧪 Formula (Deprecated)

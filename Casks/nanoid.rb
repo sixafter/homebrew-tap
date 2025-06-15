@@ -2,7 +2,7 @@
 cask "nanoid" do
   desc "A simple, fast, and concurrent command-line tool for generating secure, URL-friendly unique string IDs using the NanoID Go implementation."
   homepage "https://github.com/sixafter/homebrew-nanoid-cli/"
-  version "1.18.1"
+  version "1.18.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "nanoid" do
 
   on_macos do
     on_intel do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_darwin_amd64.tar.gz"
-      sha256 "8df0edcec11b9d686727703f6eb2ef2c530cb3681ff84a2050801a9c224b2b85"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.2/nanoid_1.18.2_darwin_amd64.tar.gz"
+      sha256 "1c79bf021199fbbb04fda2e113088ea6e9d04d35e7496367fc9e1f63e5410680"
     end
     on_arm do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_darwin_arm64.tar.gz"
-      sha256 "542dae934c991b7c62f1e85b3b071ac840a13a1f3a9d4707b8e2d704aa84b41c"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.2/nanoid_1.18.2_darwin_arm64.tar.gz"
+      sha256 "5ae78ab34168edbcee5970cfd649513077192d8c4d59613864d682f09f5d7906"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_linux_amd64.tar.gz"
-      sha256 "c5eee860616aa9813adc1fd9a2207b16bb4119ad8d7c26cd50ca55b08ab08f86"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.2/nanoid_1.18.2_linux_amd64.tar.gz"
+      sha256 "e15b358e26605740744267b34f63bd95731e2b0659f2e152ab1351be83055a1b"
     end
     on_arm do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.1/nanoid_1.18.1_linux_arm64.tar.gz"
-      sha256 "0d32db633f48e869fec2b074912785ff841c6b70d80fbff4488a732e90bef7e6"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.18.2/nanoid_1.18.2_linux_arm64.tar.gz"
+      sha256 "d121bced8de27a5995a6ae6c6ecebb5b7b8b66374523c441609f8b580d7ad37d"
     end
   end
 

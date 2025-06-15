@@ -8,7 +8,7 @@ This tap provides both **Homebrew Formulae** and **Casks** for installing the `n
 
 ## 🍺 Cask (Preferred)
 
-> ✅ A single `nanoid` cask dynamically installs the correct binary for your system (macOS or Linux, Intel or ARM64).
+> A single `nanoid` cask dynamically installs the correct binary for your system (macOS or Linux, Intel or ARM64).
 
 Install via cask:
 
@@ -17,14 +17,14 @@ brew tap sixafter/tap
 brew install --cask nanoid
 ```
 
-Supported platforms:
+### ✅ Supported Platforms
 
-| Platform | Architecture | Supported |
-|----------|--------------|-----------|
-| macOS    | arm64        | ✅        |
-| macOS    | amd64 (Intel)| ✅        |
-| Linux    | arm64        | ✅        |
-| Linux    | amd64        | ✅        |
+- **macOS**
+  - `arm64` (Apple Silicon)
+  - `amd64` (Intel)
+- **Linux**
+  - `arm64`
+  - `amd64`
 
 > 🔐 **Note for macOS users**: If you see a `killed` error when running `nanoid`, macOS may have quarantined the binary due to it being unsigned or unnotarized. To resolve:
 >

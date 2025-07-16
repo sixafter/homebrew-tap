@@ -2,7 +2,7 @@
 cask "nanoid" do
   desc "A simple, fast, and concurrent command-line tool for generating secure, URL-friendly unique string IDs using the NanoID Go implementation."
   homepage "https://github.com/sixafter/homebrew-nanoid-cli/"
-  version "1.25.0"
+  version "1.26.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,31 +12,31 @@ cask "nanoid" do
 
   on_macos do
     on_intel do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.25.0/nanoid_1.25.0_darwin_amd64.tar.gz",
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.26.0/nanoid_1.26.0_darwin_amd64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "8e3b32705b12acad59c21d581feecf84f7a483af1a368e992d4c10f77f6906c6"
+      sha256 "54ae17d338557fc371d7c268b6659a3e9c7663edcba823e9dc654d69ed79bfad"
     end
     on_arm do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.25.0/nanoid_1.25.0_darwin_arm64.tar.gz",
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.26.0/nanoid_1.26.0_darwin_arm64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "229e21efe794a61e8e21f4185a729fd40f2e9f1e0858002f43c7d7614ffb5a63"
+      sha256 "46227ecdd7c19332af0182de94818b0e342908a11b9e549519ae195cd4f055b8"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.25.0/nanoid_1.25.0_linux_amd64.tar.gz",
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.26.0/nanoid_1.26.0_linux_amd64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "a291ba714e0e5c5e22534d20403673fe879e53c34a24104ce81faecda1e4b2ac"
+      sha256 "d918db852f1d359fb4952bc2701f2d4d73bd75b130e291cbdde4bef4bf8a01ef"
     end
     on_arm do
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.25.0/nanoid_1.25.0_linux_arm64.tar.gz",
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.26.0/nanoid_1.26.0_linux_arm64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "28ec24ef8c7ac5fe1dbe6a294fd3369c24708c0cee2a641003995cebbba193f2"
+      sha256 "3a57644971fb99a128cf89bed8d97aaf7794ed47ccd760cf3a56ebee50a6ab71"
     end
   end
 

@@ -3,7 +3,7 @@ cask "nanoid" do
   name "nanoid"
   desc "A simple, fast, and concurrent command-line tool for generating secure, URL-friendly unique string IDs using the NanoID Go implementation."
   homepage "https://github.com/sixafter/homebrew-nanoid-cli/"
-  version "1.37.0"
+  version "1.38.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -16,13 +16,13 @@ cask "nanoid" do
       url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "a08bff4cd86bfcdaad9b5dc67df0f020afa59b54ed9a05ac37fa77a987b42abf"
+      sha256 "950ae00a3e2d5718ceaecaa4d4347fdd44b1c9374d804965a98494d12e05511f"
     end
     on_arm do
       url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "1d66e3b8580e376d154672af8b7a95f83bd5b3fd9d633fb2263b97a7ed374ed7"
+      sha256 "4594c131af7cbe65ba4ebf70c189de1e91147fe62b9b920aa0d7b12505ad84e3"
     end
   end
 
@@ -31,13 +31,13 @@ cask "nanoid" do
       url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_linux_amd64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "c3ca7385a9433793c467535f379d154b5ff140dd5e4aa620a48d99c93cfbf01f"
+      sha256 "43fc9a3a7398ec5f9b09c4ae6acd1c5209992d8a520a73ff56b8b5eda460e29c"
     end
     on_arm do
       url "https://github.com/sixafter/nanoid-cli/releases/download/v#{version}/nanoid_#{version}_linux_arm64.tar.gz",
         verified: "github.com/sixafter/nanoid-cli/",
         using: :homebrew_curl
-      sha256 "619820e2d9396cf0a9228d540d10c90e33c2c8741be7d26210323a3bb10d89cf"
+      sha256 "d7e105e0c721aef9105be0db51cfddbaf8c18b9163bde063b6ef59798db1f46b"
     end
   end
 

@@ -5,21 +5,21 @@
 class Nanoid < Formula
   desc "A simple, fast, and concurrent command-line tool for generating secure, URL-friendly unique string IDs using the NanoID Go implementation."
   homepage "https://github.com/sixafter/homebrew-nanoid-cli/"
-  version "1.38.0"
+  version "1.39.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.38.0/nanoid_1.38.0_darwin_amd64.tar.gz"
-      sha256 "950ae00a3e2d5718ceaecaa4d4347fdd44b1c9374d804965a98494d12e05511f"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.39.0/nanoid_1.39.0_darwin_amd64.tar.gz"
+      sha256 "e00853a587505ac8739a9b19b076f8fceac8c0ca50f5ccb0f6d2db9e48e22489"
 
       def install
         bin.install "nanoid"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.38.0/nanoid_1.38.0_darwin_arm64.tar.gz"
-      sha256 "4594c131af7cbe65ba4ebf70c189de1e91147fe62b9b920aa0d7b12505ad84e3"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.39.0/nanoid_1.39.0_darwin_arm64.tar.gz"
+      sha256 "558178b06b2954a8e5836fd648be23c505632c41025e77e3c8176207b26624eb"
 
       def install
         bin.install "nanoid"
@@ -29,22 +29,22 @@ class Nanoid < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.38.0/nanoid_1.38.0_linux_amd64.tar.gz"
-      sha256 "43fc9a3a7398ec5f9b09c4ae6acd1c5209992d8a520a73ff56b8b5eda460e29c"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.39.0/nanoid_1.39.0_linux_amd64.tar.gz"
+      sha256 "701d23788a19052d2bfc6172fb946111ca5d1dea5a999b93ff6c692af9ebebd8"
       def install
         bin.install "nanoid"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.38.0/nanoid_1.38.0_linux_armv6.tar.gz"
-      sha256 "5602ebba43719c7b80aeb027f09d52a14baa7fc47a2c36fef31df9f4d3646d7c"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.39.0/nanoid_1.39.0_linux_armv6.tar.gz"
+      sha256 "4a405e63c4bb8541fbb047d0a6af35a7e114e561aa4345f51809f5d847cd54db"
       def install
         bin.install "nanoid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.38.0/nanoid_1.38.0_linux_arm64.tar.gz"
-      sha256 "d7e105e0c721aef9105be0db51cfddbaf8c18b9163bde063b6ef59798db1f46b"
+      url "https://github.com/sixafter/nanoid-cli/releases/download/v1.39.0/nanoid_1.39.0_linux_arm64.tar.gz"
+      sha256 "d630e467d89d95f2c8a6f5c7c74187cfdd611f92fdb177058db4f3e98fa3acdc"
       def install
         bin.install "nanoid"
       end
